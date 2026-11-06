@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Win an Epic USA Trip | Leader × Ubiquiti</title>
+<link rel="preload" href="assets/fonts/D-DIN.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/D-DIN-Bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="css/app.css?v=202611061619">
+<!--
+  Lobby touchscreen for the UniFi Connect Display (1920 x 1080). Deliverable node: CH-LOBBY.
+  Facts: CAMP-MIAMI-PROMO, CAMP-WAYS-LINE, PRIZE-VALUE, EXP-UWC, EXP-HELI-LAUNCH, EXP-FISHING,
+  EXP-AIRBOAT, EXP-MIAMI, EVT-UWC-2027, TIME-EVENT-DATE, LOC-LOEWS, TIME-PROMO-PERIOD, RULE-ELIGIBILITY,
+  LEGAL-FINE-PRINT, WIN-REVENUE-GROWTH, WIN-SPEND-SPIN, WIN-UNIFI-ACCESS,
+  WIN-UNIFI-ENTERPRISE, WIN-UNIFI-PROTECT, SRC-UWC-2025-PHOTO (the reel includes UWC 2025 footage).
+  Lobby wording that differs from the canonical node text is logged against CH-LOBBY in the graph.
+  Pending: Q-CURRENCY, Q-TCS-DOC, Q-UWC-PHOTO, Q-PERMITS, Q-SALES-DEF, Q-DEALREG-DEF.
+-->
+</head>
+<body>
+<div id="stage">
+
+  <main class="home" id="home">
+    <section class="hero" aria-label="Promotional video">
+      <video id="heroVideo" autoplay muted loop playsinline disablepictureinpicture preload="auto"></video>
+      <img class="hero-lockup" src="assets/logos/leader-ubiquiti-lockup.svg" alt="LEADER | UBIQUITI®">
+    </section>
+
+    <section class="info">
+      <h1>Win an Epic<br>USA Trip!</h1>
+
+      <div class="period" id="promoPeriod"></div>
+
+      <div class="stat">
+        <span class="stat-num">$15,000</span>
+        <span class="stat-label">Package Value<br>Per Winner</span>
+      </div>
+
+      <div class="promo-tabs">
+        <div class="tabs" role="tablist" aria-label="Promo details">
+          <button class="tab" type="button" role="tab" id="promoTab-prize" data-promo-tab="prize" aria-controls="promoPanel-prize" aria-selected="true">The Prize</button>
+          <button class="tab" type="button" role="tab" id="promoTab-event" data-promo-tab="event" aria-controls="promoPanel-event" aria-selected="false">The Event</button>
+        </div>
+        <div class="promo-panel" id="promoPanel-prize" role="tabpanel" aria-labelledby="promoTab-prize"><ul class="prizes" id="prizes"></ul></div>
+        <div class="promo-panel" id="promoPanel-event" role="tabpanel" aria-labelledby="promoTab-event" hidden><ul class="prizes" id="eventList"></ul></div>
+      </div>
+    </section>
+
+    <section class="ways" aria-label="Ways to win">
+      <div class="ways-head">
+        <h2>Five Ways <span>Six Winners</span></h2>
+      </div>
+      <div class="ways-row" id="waysRow"></div>
+    </section>
+
+    <footer class="legal" id="homeLegal"></footer>
+  </main>
+
+  <div class="scrim" id="scrim" hidden>
+    <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"></div>
+  </div>
+
+</div>
+<script src="js/catalog.js?v=202611061619"></script>
+<script src="js/app.js?v=202611061619"></script>
+</body>
+</html>

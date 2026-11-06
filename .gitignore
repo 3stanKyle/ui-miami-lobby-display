@@ -1,0 +1,5 @@
+# Superseded files, not used by the page and not for public hosting
+assets/video/uwc-2025-placeholder.mp4
+assets/fonts/ui-sans-v11-*.woff2
+__pycache__/
+*.pyc
